@@ -1,0 +1,15 @@
+[package]
+name = "db_fetcher"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+sqlx = { version = "0.5.11", features = ["postgres","runtime-tokio-native-tls","json"] }
+serde = "1.0.136"
+serde_json = "1.0.79"
+tokio = { version = "1", features = ["full"] }
+tokio-stream = "0.1.8"
+futures = "0.3"
+anyhow = "1.0.55"
